@@ -4,20 +4,22 @@
 
 <html>
 <head>
-<title>»óÇ°µî·Ï</title>
+<title>ìƒí’ˆë“±ë¡</title>
 
 <link rel="stylesheet" href="/css/admin.css" type="text/css">
 
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript">
 
-<a href="/product/listProduct?menu=manage">È®ÀÎ
-<a href="/product/addProduct.jsp;">Ãß°¡µî·Ï
 $(function(){
-	$("td.ct_btn01:contains('È®ÀÎ')").on("click",function(){
-		
-	})
-})
+	$("td.ct_btn01:contains('í™•ì¸')").on("click",function(){
+		self.location="/product/listProduct?menu=manage";
+	});
+	
+	$("td.ct_btn01:contains('ì¶”ê°€ë“±ë¡')").on("click",function(){
+		self.location="/product/addProduct.jsp";
+	});
+});
 </script>
 
 </head>
@@ -32,7 +34,7 @@ $(function(){
 		<td background="/images/ct_ttl_img02.gif" width="100%" style="padding-left: 10px;">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="93%" class="ct_ttl01">»óÇ°µî·Ï</td>
+					<td width="93%" class="ct_ttl01">ìƒí’ˆë“±ë¡</td>
 					<td width="20%" align="right">&nbsp;</td>
 				</tr>
 			</table>
@@ -49,7 +51,7 @@ $(function(){
 	</tr>
 	<tr>
 		<td width="104" class="ct_write">
-			»óÇ°¸í <img src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ìƒí’ˆëª… <img src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
@@ -67,7 +69,7 @@ $(function(){
 
 	<tr>
 		<td width="104" class="ct_write">
-			»óÇ°»ó¼¼Á¤º¸ <img  src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ìƒí’ˆìƒì„¸ì •ë³´ <img  src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${product.prodDetail}</td>
@@ -78,7 +80,7 @@ $(function(){
 
 	<tr>
 		<td width="104" class="ct_write">
-			Á¦Á¶ÀÏÀÚ<img	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ì œì¡°ì¼ì<img	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${product.manuDate}</td>
@@ -88,7 +90,7 @@ $(function(){
 	</tr>
 	<tr>
 		<td width="104" class="ct_write">
-			°¡°İ<img 	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ê°€ê²©<img 	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${product.price}</td>
@@ -98,10 +100,10 @@ $(function(){
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">»óÇ°ÀÌ¹ÌÁö</td>
+		<td width="104" class="ct_write">ìƒí’ˆì´ë¯¸ì§€</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
-			<!-- Å×ÀÌºí ½ÃÀÛ -->
+			<!-- í…Œì´ë¸” ì‹œì‘ -->
 			<table border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<td height="26">
@@ -126,7 +128,7 @@ $(function(){
 						<img src="/images/ct_btnbg01.gif" width="17" height="23"/>
 					</td>
 					<td background="/images/ct_btnbg02.gif" class="ct_btn01" style="padding-top:3px;">
-						È®ÀÎ
+						í™•ì¸
 					</td>
 					<td width="14" height="23">
 						<img src="/images/ct_btnbg03.gif" width="14" height="23"/>
@@ -135,7 +137,7 @@ $(function(){
 						<img src="/images/ct_btnbg01.gif" width="17" height="23"/>
 					</td>
 					<td background="/images/ct_btnbg02.gif" class="ct_btn01" style="padding-top:3px;">
-						Ãß°¡µî·Ï
+						ì¶”ê°€ë“±ë¡
 					</td>
 					<td width="14" height="23">
 						<img src="/images/ct_btnbg03.gif" width="14" height="23"/>
