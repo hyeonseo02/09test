@@ -18,6 +18,10 @@ function fncAddPurchase() {
 	document.addPurchase.submit();
 }
 -->
+	
+	
+	<a href="javascript:fncAddPurchase();"></a>
+	<a href="javascript:history.go(-1)">
 </script>
 </head>
 
@@ -33,7 +37,7 @@ function fncAddPurchase() {
 		<td background="/images/ct_ttl_img02.gif" width="100%" style="padding-left: 10px;">
 			<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="93%" class="ct_ttl01">»óÇ°»ó¼¼Á¶È¸</td>
+					<td width="93%" class="ct_ttl01">ìƒí’ˆìƒì„¸ì¡°íšŒ</td>
 					<td width="20%" align="right">&nbsp;</td>
 				</tr>
 			</table>
@@ -52,7 +56,7 @@ function fncAddPurchase() {
 	</tr>
 	<tr>
 		<td width="300" class="ct_write">
-			»óÇ°¹øÈ£ <img src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ìƒí’ˆë²ˆí˜¸ <img src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01" width="299">
@@ -68,7 +72,7 @@ function fncAddPurchase() {
 	</tr>
 	<tr>
 		<td width="104" class="ct_write">
-			»óÇ°¸í <img src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ìƒí’ˆëª… <img src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${purchase.purchaseProd.prodName}</td>
@@ -78,7 +82,7 @@ function fncAddPurchase() {
 	</tr>
 	<tr>
 		<td width="104" class="ct_write">
-			»óÇ°»ó¼¼Á¤º¸ <img	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			ìƒí’ˆìƒì„¸ì •ë³´ <img	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${purchase.purchaseProd.prodDetail}</td>
@@ -87,7 +91,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">Á¦Á¶ÀÏÀÚ</td>
+		<td width="104" class="ct_write">ì œì¡°ì¼ì</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${purchase.purchaseProd.manuDate}</td>
 	</tr>
@@ -95,7 +99,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">°¡°İ</td>
+		<td width="104" class="ct_write">ê°€ê²©</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${purchase.purchaseProd.price}</td>
 	</tr>
@@ -103,7 +107,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">µî·ÏÀÏÀÚ</td>
+		<td width="104" class="ct_write">ë“±ë¡ì¼ì</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${purchase.purchaseProd.regDate}</td>
 	</tr>
@@ -112,7 +116,7 @@ function fncAddPurchase() {
 	</tr>
 	<tr>
 		<td width="104" class="ct_write">
-			±¸¸ÅÀÚ¾ÆÀÌµğ <img 	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
+			êµ¬ë§¤ìì•„ì´ë”” <img 	src="/images/ct_icon_red.gif" width="3" height="3" align="absmiddle"/>
 		</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">${purchase.buyer.userId}</td>
@@ -122,13 +126,13 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">±¸¸Å¹æ¹ı</td>
+		<td width="104" class="ct_write">êµ¬ë§¤ë°©ë²•</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
 			<select 	name="paymentOption"		class="ct_input_g" 
 							style="width: 100px; height: 19px" maxLength="20">
-				<option value="1" selected="selected">Çö±İ±¸¸Å</option>
-				<option value="2">½Å¿ë±¸¸Å</option>
+				<option value="1" selected="selected">í˜„ê¸ˆêµ¬ë§¤</option>
+				<option value="2">ì‹ ìš©êµ¬ë§¤</option>
 			</select>
 		</td>
 	</tr>
@@ -136,7 +140,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">±¸¸ÅÀÚÀÌ¸§</td>
+		<td width="104" class="ct_write">êµ¬ë§¤ìì´ë¦„</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
 			<input type="text" name="receiverName" 	class="ct_input_g" 
@@ -147,7 +151,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">±¸¸ÅÀÚ¿¬¶ôÃ³</td>
+		<td width="104" class="ct_write">êµ¬ë§¤ìì—°ë½ì²˜</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
 			<input 	type="text" name="receiverPhone" class="ct_input_g" 
@@ -158,7 +162,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">±¸¸ÅÀÚÁÖ¼Ò</td>
+		<td width="104" class="ct_write">êµ¬ë§¤ìì£¼ì†Œ</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
 			<input 	type="text" name="divyAddr" class="ct_input_g" 
@@ -169,7 +173,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">±¸¸Å¿äÃ»»çÇ×</td>
+		<td width="104" class="ct_write">êµ¬ë§¤ìš”ì²­ì‚¬í•­</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td class="ct_write01">
 			<input		type="text" name="divyRequest" 	class="ct_input_g" 
@@ -180,7 +184,7 @@ function fncAddPurchase() {
 		<td height="1" colspan="3" bgcolor="D6D6D6"></td>
 	</tr>
 	<tr>
-		<td width="104" class="ct_write">¹è¼ÛÈñ¸ÁÀÏÀÚ</td>
+		<td width="104" class="ct_write">ë°°ì†¡í¬ë§ì¼ì</td>
 		<td bgcolor="D6D6D6" width="1"></td>
 		<td width="200" class="ct_write01">
 			<input 	type="text" readonly="readonly" name="divyDate" class="ct_input_g" 
@@ -204,7 +208,7 @@ function fncAddPurchase() {
 						<img src="/images/ct_btnbg01.gif" width="17" height="23"/>
 					</td>
 					<td background="/images/ct_btnbg02.gif" class="ct_btn01" style="padding-top: 3px;">
-						<a href="javascript:fncAddPurchase();">±¸¸Å</a>
+						
 					</td>
 					<td width="14" height="23">
 						<img src="/images/ct_btnbg03.gif" width="14" height="23"/>
@@ -214,7 +218,7 @@ function fncAddPurchase() {
 						<img src="/images/ct_btnbg01.gif" width="17" height="23"/>
 					</td>
 					<td background="/images/ct_btnbg02.gif" class="ct_btn01" style="padding-top: 3px;">
-						<a href="javascript:history.go(-1)">Ãë¼Ò</a>
+						ì·¨ì†Œ
 					</td>
 					<td width="14" height="23">
 						<img src="/images/ct_btnbg03.gif" width="14" height="23"/>
